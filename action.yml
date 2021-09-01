@@ -1,0 +1,14 @@
+---
+# action.yml
+name: 'action-go-template'
+description: 'description action-go-template'
+author: Inhere
+runs:
+  using: 'docker'
+  # image: 'Dockerfile'
+  # image: 'docker://ghcr.io/hi-actions/action-go-template:latest'
+  # image: 'docker://docker.pkg.github.com/hi-actions/action-go-template/IMAGE_NAME:latest'
+  image: 'docker://ghcr.io/hi-actions/action-go-template/IMAGE_NAME:latest'
+branding:
+  icon: "tag"
+  color: "green"
