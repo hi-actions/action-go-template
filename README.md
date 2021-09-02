@@ -1,6 +1,7 @@
 # action-go-template
 
-[![deploy-image](https://github.com/hi-actions/action-go-template/actions/workflows/deploy-image.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/deploy-image.yml)
+[![deploy-image](https://github.com/hi-actions/action-go-template/actions/workflows/Deploy-image.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/Deploy-image.yml)
+[![Test-run](https://github.com/hi-actions/action-go-template/actions/workflows/Test-run.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/Test-run.yml)
 
 Template for github action with golang
 
@@ -11,7 +12,7 @@ Template for github action with golang
 
 ### Example Workflow
 
-Create a workflow (eg: `.github/workflows/pr-labeler.yml` see [Creating a Workflow file](https://help.github.com/en/articles/configuring-a-workflow#creating-a-workflow-file)) to utilize the labeler action with content:
+Create a workflow (eg: `.github/workflows/my-action.yml` see [Creating a Workflow file](https://help.github.com/en/articles/configuring-a-workflow#creating-a-workflow-file)) to utilize the labeler action with content:
 
 ```yml
 name: "Pull Request Labeler"

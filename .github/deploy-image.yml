@@ -1,4 +1,4 @@
-name: deploy-image
+name: Deploy-image
 on:
   push:
     paths:

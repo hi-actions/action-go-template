@@ -1,0 +1,40 @@
+name: Test-run
+
+on:
+  push:
+    paths:
+      - 'go.mod'
+      - '**.go'
+      - '**.yml'
+
+jobs:
+  test:
+    name: Test build and run
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: true
+      matrix:
+        go: [ 1.16 ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup ENV
+        # https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-commands-for-github-actions#setting-an-environment-variable
+        run: |
+          echo "RELEASE_TAG=${GITHUB_REF:10}" >> $GITHUB_ENV
+          echo "RELEASE_NAME=$GITHUB_WORKFLOW" >> $GITHUB_ENV
+
+      # https://github.com/actions/setup-go
+      - name: Use Go ${{ matrix.go }}
+        timeout-minutes: 3
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go }}
+
+      - name: Build package
+        run: |
+          go build -o ./toolapp
+          ./toolapp
