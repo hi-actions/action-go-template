@@ -17,7 +17,8 @@ func main() {
 	// ghRefer := "refs/pull/34/merge"
 	prNumber := getPrNumber(ghRefer)
 	if prNumber == 0 {
-		slog.Fatalf("parse PR number failed, GITHUB_REF: %s", ghRefer)
+		// slog.Fatalf("parse PR number failed, GITHUB_REF: %s", ghRefer)
+		slog.Warnf("parse PR number failed, GITHUB_REF: %s", ghRefer)
 	}
 
 	slog.Info("Successful")
