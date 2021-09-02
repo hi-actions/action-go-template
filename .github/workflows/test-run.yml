@@ -34,7 +34,12 @@ jobs:
         with:
           go-version: ${{ matrix.go }}
 
-      - name: Build package
+      - name: Build package and run
         run: |
           go build -o ./toolapp
           ./toolapp
+
+      - name: Use action and run
+        use: hi-actions/action-go-template@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

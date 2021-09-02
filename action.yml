@@ -6,9 +6,8 @@ author: Inhere
 runs:
   using: 'docker'
   # image: 'Dockerfile'
-  # image: 'docker://ghcr.io/hi-actions/action-go-template:latest'
-  # image: 'docker://docker.pkg.github.com/hi-actions/action-go-template/IMAGE_NAME:latest'
-  image: 'docker://ghcr.io/hi-actions/action-go-template/IMAGE_NAME:latest'
+  # image: 'docker://ghcr.io/hi-actions/action-go-template:main'
+  image: 'docker://ghcr.io/hi-actions/action-go-template:main'
 branding:
   icon: "tag"
   color: "green"
