@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gookit/config"
+	"github.com/gookit/config/v2"
 	"github.com/gookit/slog"
 )
 
@@ -13,7 +13,7 @@ func main() {
 	// - on PR: "refs/pull/:prNumber/merge"
 	// - on push: "refs/heads/master"
 	// - on push tag: "refs/tags/v0.0.1"
-	ghRefer := config.Getenv("GITHUB_REF")
+	ghRefer := config.Getenv("GITHUB_REF", "NONE")
 	// ghRefer := "refs/pull/34/merge"
 	prNumber := getPrNumber(ghRefer)
 	if prNumber == 0 {

@@ -1,7 +1,7 @@
 # action-go-template
 
-[![deploy-image](https://github.com/hi-actions/action-go-template/actions/workflows/Deploy-image.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/Deploy-image.yml)
-[![Test-run](https://github.com/hi-actions/action-go-template/actions/workflows/Test-run.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/Test-run.yml)
+[![deploy-image](https://github.com/hi-actions/action-go-template/actions/workflows/Deploy-image.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/deploy-image.yml)
+[![Test-run](https://github.com/hi-actions/action-go-template/actions/workflows/Test-run.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/test-run.yml)
 
 Template for github action with golang
 
