@@ -1,14 +1,13 @@
 # action-go-template
 
-[![deploy-image](https://github.com/hi-actions/action-go-template/actions/workflows/Deploy-image.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/deploy-image.yml)
-[![Test-run](https://github.com/hi-actions/action-go-template/actions/workflows/Test-run.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/test-run.yml)
+[![deploy-image](https://github.com/hi-actions/action-go-template/actions/workflows/deploy-image.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/deploy-image.yml)
+[![Test-run](https://github.com/hi-actions/action-go-template/actions/workflows/test-run.yml/badge.svg)](https://github.com/hi-actions/action-go-template/actions/workflows/test-run.yml)
 
-Template for github action with golang
+Template for GitHub action with golang
 
 ## Init Template
 
 - please replace `action-go-template` to your project name.
-- please replace `YOUR_IMAGE_NAME` to your docker image name.
 
 ### Example Workflow
 
@@ -22,7 +21,7 @@ jobs:
   labels:
     runs-on: ubuntu-latest
     steps:
-    - uses: hi-actions/action-go-template@master
+    - uses: hi-actions/action-go-template@main
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LABEL_CONFIG: .github/labeler.yml # this is default
