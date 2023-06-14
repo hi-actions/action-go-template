@@ -8,6 +8,5 @@ require (
 	github.com/gookit/config/v2 v2.2.1
 	github.com/gookit/goutil v0.6.8
 	github.com/gookit/slog v0.5.1
-	golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90 // indirect
-	golang.org/x/oauth2 v0.8.0
+	golang.org/x/oauth2 v0.9.0
 )
