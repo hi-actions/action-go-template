@@ -8,5 +8,5 @@ require (
 	github.com/gookit/config/v2 v2.2.1
 	github.com/gookit/goutil v0.6.10
 	github.com/gookit/slog v0.5.1
-	golang.org/x/oauth2 v0.14.0
+	golang.org/x/oauth2 v0.15.0
 )
